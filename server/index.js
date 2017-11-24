@@ -24,6 +24,9 @@ app.use('/api/v1', api.game)
 app.use('/api/v1', api.publication)
 app.use('/api/v1', api.comment)
 app.use('/api/v1', api.event)
+app.use('/api/v1', api.cabin)
+app.use('/api/v1', api.userCabin)
+app.use('/api/v1', api.userGamer)
 
 mongoose.connect(config.db, (err, res) => {
   if (err) {

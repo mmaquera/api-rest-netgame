@@ -32,6 +32,8 @@ router.post('/user/create', (req, res) => {
     if (userType == 1) { 
       let gamer = new Gamer()
       gamer.nickName = req.body.userName
+      gamer.lastName = ''
+      gamer.name = ''
       gamer.idUser = objUser._id
       gamer.save((err, gamerStored) => {
         res.status(200).send(objResponse.ok({}, 'Registrado correctamente'))    

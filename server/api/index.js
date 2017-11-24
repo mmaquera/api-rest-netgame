@@ -6,6 +6,9 @@ const game = require('./game')
 const publication = require('./publication')
 const comment = require('./comment')
 const event = require('./event')
+const cabin = require('./cabin')
+const userCabin = require('./userCabin')
+const userGamer = require('./userGamer')
 
 module.exports = {
   user: user,
@@ -13,5 +16,8 @@ module.exports = {
   game: game,
   publication: publication,
   comment: comment,
-  event: event
+  event: event,
+  cabin: cabin,
+  userCabin: userCabin,
+  userGamer: userGamer
 }
