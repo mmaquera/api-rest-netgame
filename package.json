@@ -4,7 +4,7 @@
   "description": "Proyecto de API RESTfull",
   "main": "index.js",
   "scripts": {
-    "server": "nodemon ./server/index.js",
+    "server": "node ./server/index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "npm run server"
   },
