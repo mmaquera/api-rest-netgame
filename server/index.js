@@ -14,6 +14,10 @@ const port = config.port
 app.use(bodyParser.urlencoded({extended: false}))
 app.use(bodyParser.json())
 
+app.get('/', (req, res) => {
+  res.send('NetGame')
+})
+
 app.use('/api/v1', api.authorize)
 app.use('/api/v1', api.user)
 
